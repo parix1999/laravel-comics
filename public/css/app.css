@@ -114,3 +114,23 @@ nav .box-flex {
   background-repeat: no-repeat;
 }
 
+.text-sopra {
+  display: flex;
+}
+
+.text-sopra ul {
+  list-style-type: none;
+  color: white;
+  margin-right: 10px;
+}
+
+.text-sopra ul a {
+  color: white;
+  font-size: 10px;
+  text-decoration: none;
+}
+
+.shop {
+  margin-top: 30px;
+}
+

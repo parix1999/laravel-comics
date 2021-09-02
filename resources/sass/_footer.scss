@@ -16,3 +16,26 @@
     z-index:2;
     background-repeat: no-repeat;
 }
+
+// Poi si mette flex column a sx
+
+.text-sopra {
+    display: flex;
+}
+
+.text-sopra ul {
+    list-style-type: none;
+    color:white;
+    margin-right:10px;
+    
+}
+
+.text-sopra ul a {
+    color:white;
+    font-size:10px;
+    text-decoration: none;
+}
+
+.shop{
+    margin-top:30px;
+}
