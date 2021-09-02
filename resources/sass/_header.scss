@@ -20,14 +20,52 @@
     margin-right:20px;
 }
 // classi della nav-bar
-ul {
+nav {
+    margin:5px 0 0 0;
+}
+
+nav .box-flex {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box-logo{
+    width:80px;
+    img{
+        width:100%;
+    }
+}
+
+.options ul {
     list-style-type: none;
     display:flex;
 }
 
+.options ul li{
+    margin-left:15px;
+    font-size:14px;
+    height:100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
 
+.options ul li:first-child{
+    margin-left:0;
+}
 
+.options ul li a{
+    text-decoration: none;
+    color:gray;
+}
 
+.options ul li:hover{
+    border-bottom: 4px solid blue;
+    a {
+        color:blue;
+    }
+}
 // classi jumbo
 .box-jumbo {
     background-image: url('/images/jumbotron.jpg');

@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Helvetica;
 }
 
 .blue-row {
@@ -26,9 +27,52 @@
   margin-right: 20px;
 }
 
-ul {
+nav {
+  margin: 5px 0 0 0;
+}
+
+nav .box-flex {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.box-logo {
+  width: 80px;
+}
+
+.box-logo img {
+  width: 100%;
+}
+
+.options ul {
   list-style-type: none;
   display: flex;
+}
+
+.options ul li {
+  margin-left: 15px;
+  font-size: 14px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.options ul li:first-child {
+  margin-left: 0;
+}
+
+.options ul li a {
+  text-decoration: none;
+  color: gray;
+}
+
+.options ul li:hover {
+  border-bottom: 4px solid blue;
+}
+
+.options ul li:hover a {
+  color: blue;
 }
 
 .box-jumbo {
