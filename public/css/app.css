@@ -116,6 +116,7 @@ nav .box-flex {
 
 .text-sopra {
   display: flex;
+  margin-top: 20px;
 }
 
 .text-sopra ul {
