@@ -7,6 +7,14 @@ e homepage è una specie di variabile che li si passa, che prenda il posto di ti
 @section('principale')
 
     <!-- Qui ci va il codice del main in home -->
+    <main>
+        <div class="bg-main">
+    
+        </div>
+        <div class="row-blue">
 
+        </div>
+
+    </main>
 
 @endsection

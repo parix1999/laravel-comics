@@ -32,6 +32,7 @@
             </div>
             <div class="ricerca">
                 <input type="text" placeholder="search"><i class="fas fa-search"></i>
+                <!-- TO DO DA DETTAGLIARE IL SEARCH -->
             </div>
         </div>
     </nav>

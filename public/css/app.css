@@ -5,8 +5,20 @@
   font-family: Helvetica;
 }
 
+.bg-main {
+  background-color: #1c1c1c;
+  width: 100%;
+  height: 400px;
+}
+
+.row-blue {
+  background-color: #2d82f9;
+  width: 100%;
+  height: 100px;
+}
+
 .blue-row {
-  background-color: blue;
+  background-color: #2d82f9;
 }
 
 .container {
@@ -68,11 +80,11 @@ nav .box-flex {
 }
 
 .options ul li:hover {
-  border-bottom: 4px solid blue;
+  border-bottom: 4px solid #2d82f9;
 }
 
 .options ul li:hover a {
-  color: blue;
+  color: #2d82f9;
 }
 
 .box-jumbo {
