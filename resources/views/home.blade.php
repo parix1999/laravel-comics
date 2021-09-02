@@ -6,9 +6,7 @@ e homepage è una specie di variabile che li si passa, che prenda il posto di ti
 
 @section('principale')
 
-    <div>
-        ciao
-    </div>
+    <!-- Qui ci va il codice del main in home -->
 
 
 @endsection

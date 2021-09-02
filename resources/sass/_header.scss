@@ -1,3 +1,23 @@
-.prova{
-    color:red;
+.blue-row {
+    background-color: blue;  
 }
+
+.container {
+    width:1000px;
+    margin:0 auto;
+}
+
+.box-flex {
+    display: flex;
+}
+
+.blue-row .container .box-flex {
+    justify-content: flex-end;
+    color:white;
+}
+
+.item-1{
+    margin-right:20px;
+}
+// classi della nav-bar
+
