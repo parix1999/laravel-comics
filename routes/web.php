@@ -14,9 +14,16 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    // Qui devo richiamare il file creato in config, dove si trova l'array:
+    $comics = config('comics');
+    return view('home',
+    [
+        'comics' => $comics,
+    ]
+    );
 })->name('homepage');
 
+// Seconda pagina con il prodotto:
 Route::get('/product', function () {
     return view('product');
 })->name('product');

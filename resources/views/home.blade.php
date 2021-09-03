@@ -8,8 +8,21 @@ e homepage è una specie di variabile che li si passa, che prenda il posto di ti
 
     <!-- Qui ci va il codice del main in home -->
     <main>
+        <!-- jumbo -->
+        <div class="jumbo">
+            <div class="box-jumbo">
+                
+            </div>
+        </div>
+
         <div class="bg-main">
+            <div class="container">
+                @foreach($comics as $comic)
+                    {{ $comic['title'] }}
     
+                @endforeach
+
+            </div>
         </div>
         <div class="row-blue">
 

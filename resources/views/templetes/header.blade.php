@@ -38,9 +38,3 @@
     </nav>
 </div>
 
-<!-- jumbo -->
-<div class="jumbo">
-    <div class="box-jumbo">
-        
-    </div>
-</div>
