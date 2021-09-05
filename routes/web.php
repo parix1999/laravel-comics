@@ -24,6 +24,22 @@ Route::get('/', function () {
 })->name('homepage');
 
 // Seconda pagina con il prodotto:
-Route::get('/product', function () {
-    return view('product');
+//Bisogna aggiungere un'argomento, li passiamo l'id come una varibile tramite le graffe
+//Perchè ci serve l'id per ogni tipo di prodotto, si aggiunge come se fosse un path,
+//Che in fin fine è quello che verrà scritto nell'url:
+//La sintassi: graffe id e si invia nella funzione di call back:
+Route::get('/product/{id}', function ($id) {
+    
+    $id -= 1;
+
+    $comics = config('comics');
+    return view('product',
+    [
+        //Li diamo id come chiave, e id come valore:
+        'id' => $id,
+        //Qua li si passa i dati della nostra array: serve tutta l'array, e poi
+        //Recuperiamo ciò di cui abbiamo bisongo:
+        'comics' => $comics,
+    ]
+    );
 })->name('product');

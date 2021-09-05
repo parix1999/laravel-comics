@@ -19,15 +19,26 @@ e homepage è una specie di variabile che li si passa, che prenda il posto di ti
             <div class="container align">
                 @foreach($comics as $comic)
                     <div class="comic-item">
-                        <div class="box-copertina">
-                            <img src="{{ $comic['thumb'] }}" alt="copertina fumetto">
-                        </div>
+                        <!-- Quindi ora devo collegare il link per aprire la pagina del prodotto
+                        tramite il click sulla immagine del comics, con un href e il suo route,
+                        passandoli un'id e dicendoli che è una loop iteration: per mostrare
+                        la pagina del prodotto del singolo fumetto. Gli devo passare però
+                        il suo id per capire a che fumetto si riferisce per stampare poi i dati: 
+                        il link va scritto senza le graffe iniziali, solo la variabile va scritta cosi
+                        e è come se si scrivesse il percorso dell'url-->
 
+                        <!-- Si sta dicendo: Per la rotta product li invio l'id che è esattamente
+                        loop iteration. -->
+                        <a href="{{ route('product', [ 'id' => $loop->iteration ]) }}">
+                            <div class="box-copertina">
+                                <img src="{{ $comic['thumb'] }}" alt="copertina fumetto">
+                            </div>
+                        </a>
                         <div class="text">
                             {{ $comic['series'] }}
                         </div>
                     </div>
-    
+                   
                 @endforeach
 
             </div>
