@@ -15,7 +15,7 @@ e homepage è una specie di variabile che li si passa, che prenda il posto di ti
     </div>
 
     <main>
-        @dump($comics[$id])
+        @dump($comics[$arrayIndex])
         @foreach($comics as $comic)
             
 

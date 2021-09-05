@@ -30,13 +30,13 @@ Route::get('/', function () {
 //La sintassi: graffe id e si invia nella funzione di call back:
 Route::get('/product/{id}', function ($id) {
     
-    $id -= 1;
+    $arrayIndex = $id - 1;
 
     $comics = config('comics');
     return view('product',
     [
         //Li diamo id come chiave, e id come valore:
-        'id' => $id,
+        'arrayIndex' => $arrayIndex,
         //Qua li si passa i dati della nostra array: serve tutta l'array, e poi
         //Recuperiamo ciò di cui abbiamo bisongo:
         'comics' => $comics,
