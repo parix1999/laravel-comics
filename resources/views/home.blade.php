@@ -16,9 +16,17 @@ e homepage è una specie di variabile che li si passa, che prenda il posto di ti
         </div>
 
         <div class="bg-main">
-            <div class="container">
+            <div class="container align">
                 @foreach($comics as $comic)
-                    {{ $comic['title'] }}
+                    <div class="comic-item">
+                        <div class="box-copertina">
+                            <img src="{{ $comic['thumb'] }}" alt="copertina fumetto">
+                        </div>
+
+                        <div class="text">
+                            {{ $comic['series'] }}
+                        </div>
+                    </div>
     
                 @endforeach
 
