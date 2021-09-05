@@ -10,17 +10,42 @@ e homepage è una specie di variabile che li si passa, che prenda il posto di ti
     <!-- jumbo -->
     <div class="jumbo">
         <div class="box-jumbo">
-                
-         </div>
+            <div class="container posizione">
+                <div class="p-box-image">
+                    <img src="{{ $comics[$arrayIndex]['thumb'] }} " alt="comic image">
+                </div>
+            </div>
+        </div>
+        <div class="blue"></div>
     </div>
 
-    <main>
-        @dump($comics[$arrayIndex])
-        @foreach($comics as $comic)
-            
+    
+    <div class="container">
+        <main>
+            <div class="text-part">
+                <div class="title">
+                    {{ $comics[$arrayIndex]['title'] }}
+                </div>
+                <div class="buttons">
+                    <div class="button-price">
+                        U.S Price: <span>{{ $comics[$arrayIndex]['price'] }}</span>
+                        <span class="available">AVAILABLE</span>
+                    </div>
+                    <div class="button-check">
+                        Check Availability
+                    </div>
+                </div>
+                <div class="testo">
+                {{ $comics[$arrayIndex]['description'] }}
+                </div>
+            </div>
 
-        @endforeach
+            <div class="advertasing-part">
 
-    </main>
+            </div>
+        </main>
+    </div>
+
+    
     
 @endsection

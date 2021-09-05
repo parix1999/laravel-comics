@@ -118,6 +118,59 @@ nav .box-flex {
   width: 100%;
 }
 
+.blue {
+  width: 100%;
+  height: 40px;
+  background-color: #2d82f9;
+}
+
+.jumbo {
+  position: relative;
+}
+
+.p-box-image {
+  position: absolute;
+  bottom: 0;
+}
+
+.p-box-image {
+  width: 150px;
+}
+
+.p-box-image img {
+  width: 100%;
+}
+
+.buttons {
+  display: flex;
+  font-size: 14px;
+  color: white;
+}
+
+.button-price {
+  background-color: green;
+  width: 40%;
+  padding: 10px;
+  position: relative;
+}
+
+.available {
+  position: absolute;
+  right: 5px;
+}
+
+.button-check {
+  background-color: green;
+  width: 15%;
+  padding: 10px;
+  border-left: 1px solid black;
+}
+
+.testo {
+  width: 55%;
+  font-size: 14px;
+}
+
 .jumbo-image {
   background-image: url("/images/footer-bg.jpg");
   height: 300px;
