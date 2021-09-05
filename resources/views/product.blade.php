@@ -49,22 +49,61 @@ e homepage è una specie di variabile che li si passa, che prenda il posto di ti
     <!-- descrizione -->
     <div class="gray-bg">
         <div class="container">
-            <div class="talent">
-                Talent
-                <div class="art">
-                    <div class="artisti-tile">
-                        <span>Arts by:</span>
+            <div class="sotto">
+                <div class="talent">
+                    Talent
+                    <div class="art">
+                        <div class="artisti-tile">
+                            <span>Arts by:</span>
+                        </div>
+                        <div class="spec">
+                            @foreach($comics[$arrayIndex]['artists'] as $author)
+                                <a href="#">{{ $author }}</a>,
+                            @endforeach
+                        </div>
                     </div>
-                    <div class="spec">
-                        @foreach($comics[$arrayIndex]['artists'] as $author)
-                            {{ $author }}
-                        @endforeach
+
+                    <div class="art due">
+                        <div class="artisti-tile">
+                            <span>Written by:</span>
+                        </div>
+                        <div class="spec">
+                            @foreach($comics[$arrayIndex]['writers'] as $author)
+                                <a href="#">{{ $author }}</a>,
+                            @endforeach
+                        </div>
                     </div>
                 </div>
-            </div>
+    
+                <div class="specs">
+                    Specs
+                    <div class="art tre">
+                        <div class="artisti-tile">
+                            <span>Series:</span>
+                        </div>
+                        <div class="spec">
+                            <a href="#">{{ $comics[$arrayIndex]['series'] }}</a>, 
+                        </div>
+                    </div>
 
-            <div class="specs">
+                    <div class="art tre">
+                        <div class="artisti-tile">
+                            <span>U.S. Price:</span>
+                        </div>
+                        <div class="spec">
+                            <a href="#">{{ $comics[$arrayIndex]['price'] }}</a>, 
+                        </div>
+                    </div>
 
+                    <div class="art tre">
+                        <div class="artisti-tile">
+                            <span>On Sale Date:</span>
+                        </div>
+                        <div class="spec">
+                            <a href="#">{{ $comics[$arrayIndex]['sale_date'] }}</a>, 
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

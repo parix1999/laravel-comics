@@ -178,8 +178,36 @@ main.space {
 .gray-bg {
   width: 100%;
   height: 300px;
-  background-color: #f6f6f6;
-  border-top: 0.5px solid gray;
+  background-color: #ccc;
+  border-top: 0.2px solid gray;
+}
+
+.sotto {
+  display: flex;
+}
+
+.talent {
+  width: 50%;
+}
+
+.specs {
+  width: 50%;
+  margin-left: 20px;
+}
+
+.art {
+  display: flex;
+  border-top: 0.5px solid black;
+  font-size: 12px;
+  padding: 10px 0;
+}
+
+.art:last-child {
+  border-bottom: 0.5px solid black;
+}
+
+.artisti-tile {
+  margin-right: 20px;
 }
 
 .jumbo-image {
