@@ -7,6 +7,11 @@ e homepage è una specie di variabile che li si passa, che prenda il posto di ti
 @section('principale')
 
     <!-- Qui ci va il codice del main dei singoli prodotti -->
-
+    <!-- jumbo -->
+    <div class="jumbo">
+            <div class="box-jumbo">
+                
+            </div>
+        </div>
 
 @endsection

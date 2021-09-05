@@ -85,6 +85,7 @@ nav .box-flex {
 .bg-main {
   background-color: #1c1c1c;
   width: 100%;
+  padding: 20px 0;
 }
 
 .row-blue {
@@ -100,6 +101,13 @@ nav .box-flex {
 
 .comic-item {
   width: calc(100% / 6);
+  margin-bottom: 20px;
+}
+
+.text {
+  color: white;
+  font-size: 15px;
+  margin-top: 10px;
 }
 
 .box-copertina {
