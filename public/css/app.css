@@ -141,6 +141,10 @@ nav .box-flex {
   width: 100%;
 }
 
+main.space {
+  padding: 50px 0;
+}
+
 .buttons {
   display: flex;
   font-size: 14px;
@@ -169,6 +173,13 @@ nav .box-flex {
 .testo {
   width: 55%;
   font-size: 14px;
+}
+
+.gray-bg {
+  width: 100%;
+  height: 300px;
+  background-color: #f6f6f6;
+  border-top: 0.5px solid gray;
 }
 
 .jumbo-image {

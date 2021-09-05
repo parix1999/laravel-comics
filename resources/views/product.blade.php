@@ -21,7 +21,7 @@ e homepage è una specie di variabile che li si passa, che prenda il posto di ti
 
     
     <div class="container">
-        <main>
+        <main class="space">
             <div class="text-part">
                 <div class="title">
                     {{ $comics[$arrayIndex]['title'] }}
@@ -46,6 +46,28 @@ e homepage è una specie di variabile che li si passa, che prenda il posto di ti
         </main>
     </div>
 
+    <!-- descrizione -->
+    <div class="gray-bg">
+        <div class="container">
+            <div class="talent">
+                Talent
+                <div class="art">
+                    <div class="artisti-tile">
+                        <span>Arts by:</span>
+                    </div>
+                    <div class="spec">
+                        @foreach($comics[$arrayIndex]['artists'] as $author)
+                            {{ $author }}
+                        @endforeach
+                    </div>
+                </div>
+            </div>
+
+            <div class="specs">
+
+            </div>
+        </div>
+    </div>
     
     
 @endsection
