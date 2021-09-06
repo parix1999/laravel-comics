@@ -41,7 +41,9 @@ e homepage è una specie di variabile che li si passa, che prenda il posto di ti
             </div>
 
             <div class="advertasing-part">
-
+                <div class="pubblicita-box">
+                    <img src="/images/adv.jpg" alt="advertising">
+                </div>
             </div>
         </main>
     </div>
